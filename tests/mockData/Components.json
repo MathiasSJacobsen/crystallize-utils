@@ -1,0 +1,27 @@
+[
+  {
+    "name": "testSingleLineContent",
+    "id": "testSingleLineContent",
+    "type": "singleLine",
+    "content": {
+      "__typename": "SingleLineContent",
+      "text": "This is a single line content"
+    }
+  },
+  {
+    "name": "testRichTextContent",
+    "id": "testRichTextContent",
+    "type": "richText",
+    "content": {
+      "json": [
+        {
+          "kind": "block",
+          "type": "paragraph",
+          "textContent": "heihei"
+        }
+      ],
+      "html": ["<p>heihei</p>"],
+      "plainText": ["heihei"]
+    }
+  }
+]
