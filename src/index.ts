@@ -83,12 +83,16 @@ export const findImageContentImages = (components: Component[], id: string) =>
   (findContent<ImageContent>(components, id)?.images as Image[]) ?? [];
 
 export const findFirstFileContent = (components: Component[], id: string) =>
-  (findContent<FileContent>(components, id)?.firstFile as unknown as File) ?? null;
+  (findContent<FileContent>(components, id)?.firstFile as unknown as File) ??
+  null;
 
-export const findLocationsContentLat = (components: Component[], id: string) =>
+export const findLocationContentLat = (components: Component[], id: string) =>
   (findContent<LocationContent>(components, id)?.lat as LocationContent) ??
   null;
 
-export const findLocationsContentLong = (components: Component[], id: string) =>
+export const findLocationContentLong = (components: Component[], id: string) =>
   (findContent<LocationContent>(components, id)?.long as LocationContent) ??
   null;
+
+export const findLocationContent = (components: Component[], id: string) =>
+  (findContent<LocationContent>(components, id) as LocationContent) ?? null;
